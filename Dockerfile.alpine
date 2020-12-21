@@ -21,8 +21,8 @@ ENV MKDOCS_ENV=${MKDOCS_ENV} \
 
 # Install system deps
 RUN apk add --no-cache \
-    bash git && \
-    apk add --no-cache --virtual .build gcc curl musl-dev && \
+    bash git gcc musl-dev && \
+    apk add --no-cache --virtual .build curl && \
     # Installing `poetry` package manager:
     # https://github.com/python-poetry/poetry
     curl -sSL 'https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py' | python && \

@@ -1,6 +1,12 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="v0.3.0"></a>
+## [v0.3.0] - 2021-06-15
+### Chore
+- **deps:** Bump mkdocs-material from 7.1.7 to 7.1.8 ([#13](https://github.com/Tiryoh/docker-mkdocs-builder/issues/13))
+- **deps:** Bump mkdocs from 1.2 to 1.2.1 ([#12](https://github.com/Tiryoh/docker-mkdocs-builder/issues/12))
+
 
 <a name="v0.2.0"></a>
 ## [v0.2.0] - 2021-06-09
@@ -28,5 +34,6 @@
 - Add Dockerfiles
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.3.0...HEAD
+[v0.3.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.1.0...v0.2.0

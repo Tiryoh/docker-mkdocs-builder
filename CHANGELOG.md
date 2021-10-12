@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="v0.6.0"></a>
+## [v0.6.0] - 2021-10-13
+### Chore
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin ([#30](https://github.com/Tiryoh/docker-mkdocs-builder/issues/30))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.6.0 to 0.7.0 ([#31](https://github.com/Tiryoh/docker-mkdocs-builder/issues/31))
+- **deps:** Bump mkdocs-minify-plugin from 0.4.0 to 0.4.1 ([#34](https://github.com/Tiryoh/docker-mkdocs-builder/issues/34))
+- **deps:** Bump mkdocs-material from 7.2.6 to 7.3.2 ([#36](https://github.com/Tiryoh/docker-mkdocs-builder/issues/36))
+
+
 <a name="v0.5.0"></a>
 ## [v0.5.0] - 2021-09-09
 ### Chore
@@ -54,7 +63,8 @@
 - Add Dockerfiles
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.0...HEAD
+[v0.6.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.2.0...v0.3.0

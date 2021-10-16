@@ -1,0 +1,51 @@
+name: Build and Test
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "Dockerfile.**"
+      - "poetry.lock"
+      - "pyproject.toml"
+      - ".github/workflows/test.yml"
+
+env:
+  DOCKER_USERNAME: tiryoh
+  DOCKER_IMAGENAME: mkdocs-builder
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        ros-distro: [alpine, debian]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build docker image
+        env:
+          DOCKER_LABEL: ${{ matrix.target }}
+        run: |
+          docker build -t $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL -f Dockerfile.$DOCKER_LABEL .
+      - name: List docker images
+        run: |
+          mkdir -p build_log
+          docker image ls "$DOCKER_USERNAME/*" | tee ./build_log/docker_images.txt
+      - name: Install trivy
+        run: |
+          sudo apt-get install apt-transport-https gnupg
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -cs) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install trivy
+      - name: Vulnerability Scan with Trivy
+        env:
+          DOCKER_LABEL: ${{ matrix.target }}
+        run: |
+          mkdir -p build_log
+          trivy --exit-code 0 --severity HIGH --no-progress $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL | tee ./build_log/trivy_log-HIGH.txt
+          trivy --exit-code 0 --severity CRITICAL --no-progress $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL | tee ./build_log/trivy_log-CRITICAL.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: build_log-${{ matrix.target }}
+          path: build_log

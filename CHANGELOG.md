@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="v0.6.1"></a>
+## [v0.6.1] - 2021-10-16
+### Bug Fixes
+- Fix libxml2 and libxslt missing error on poetry install ([#39](https://github.com/Tiryoh/docker-mkdocs-builder/issues/39))
+
+### CI
+- Add Dockerfile build test ([#40](https://github.com/Tiryoh/docker-mkdocs-builder/issues/40))
+
+
 <a name="v0.6.0"></a>
 ## [v0.6.0] - 2021-10-13
 ### Chore
@@ -22,7 +31,7 @@
 
 
 <a name="v0.4.0"></a>
-## [v0.4.0] - 2021-07-22
+## [v0.4.0] - 2021-08-01
 ### Chore
 - **deps:** Bump mkdocs from 1.2.1 to 1.2.2 ([#19](https://github.com/Tiryoh/docker-mkdocs-builder/issues/19))
 - **deps:** Bump mkdocs-material from 7.1.10 to 7.1.11 ([#18](https://github.com/Tiryoh/docker-mkdocs-builder/issues/18))
@@ -62,8 +71,8 @@
 ### Feature
 - Add Dockerfiles
 
-
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.1...HEAD
+[v0.6.1]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.0...v0.6.1
 [v0.6.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.3.0...v0.4.0

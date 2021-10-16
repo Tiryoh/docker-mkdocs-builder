@@ -7,7 +7,7 @@ on:
       - "Dockerfile.**"
       - "poetry.lock"
       - "pyproject.toml"
-      - ".github/workflows/test.yml"
+      - ".github/workflows/test.yaml"
 
 env:
   DOCKER_USERNAME: tiryoh

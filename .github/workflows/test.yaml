@@ -44,28 +44,39 @@ jobs:
         with:
           name: build-log-${{ matrix.target }}
           path: build_log
-      - name: Install Trivy
-        run: |
-          sudo apt-get install apt-transport-https gnupg
-          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
-          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -cs) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
-          sudo apt-get update
-          sudo apt-get install trivy
-      - name: Install Trivy template
-        uses: actions/checkout@v2
+      # - name: Install Trivy
+      #   run: |
+      #     sudo apt-get install apt-transport-https gnupg
+      #     wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+      #     echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -cs) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+      #     sudo apt-get update
+      #     sudo apt-get install trivy
+      # - name: Install Trivy template
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: aquasecurity/trivy
+      #     path: trivy
+      # - name: Vulnerability Scan with Trivy
+      #   env:
+      #     DOCKER_LABEL: ${{ matrix.target }}
+      #   run: |
+      #     trivy image --format template --template "@trivy/contrib/sarif.tpl" --exit-code 0 --vuln-type os,library --severity CRITICAL,HIGH --output trivy-results.sarif --no-progress $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
         with:
-          repository: aquasecurity/trivy
-          path: trivy
-      - name: Vulnerability Scan with Trivy
-        env:
-          DOCKER_LABEL: ${{ matrix.target }}
-        run: |
-          trivy image --format template --template "@trivy/contrib/sarif.tpl" --exit-code 0 --vuln-type os,library --severity CRITICAL,HIGH --output trivy-results.sarif --no-progress $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL
+          image-ref: '${{ env.DOCKER_USERNAME }}}/${{ env.DOCKER_IMAGENAME }}:${{ matrix.target }}'
+          exit-code: '0'
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH'
+          format: 'template'
+          template: '@/contrib/sarif.tpl'
+          output: 'trivy-results.sarif'
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: 'trivy-results.sarif'
-      - uses: actions/upload-artifact@v2
-        with:
-          name: trivy-scan-${{ matrix.target }}
-          path: trivy-results.sarif
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: trivy-scan-${{ matrix.target }}
+      #     path: trivy-results.sarif
+

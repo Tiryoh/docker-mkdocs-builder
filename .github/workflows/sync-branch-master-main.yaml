@@ -9,14 +9,16 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
       - name: Setup remote repository
         run: |
           git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git fetch
+          git pull
       - name: Merge master branch into main branch
         run: |
-          git checkout main
+          git checkout -b main origin/main
           git merge master --no-commit
       - name: Push update to main branch
         run: |
-          git push main > /dev/null 2>&1
+          git push origin main > /dev/null 2>&1

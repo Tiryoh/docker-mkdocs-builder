@@ -1,0 +1,11 @@
+pull_request_rules:
+  - name: Automatic merge PRs from Dependabot
+    conditions:
+      - base=master
+      - author~=^dependabot(|-preview)\[bot\]$
+      - title~=Bump [^\s]+ from ([\d]+)\..+ to \1\.
+      - check-success=build (alpine)
+      - check-success=build (debian)
+    actions:
+      merge:
+        method: squash

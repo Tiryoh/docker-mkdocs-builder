@@ -1,0 +1,22 @@
+name: Sync master branch and main branch
+on:
+  push:
+    branches:
+      - master
+jobs:
+  release-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Setup remote repository
+        run: |
+          git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch
+      - name: Merge master branch into main branch
+        run: |
+          git checkout main
+          git merge master --no-commit
+      - name: Push update to main branch
+        run: |
+          git push main > /dev/null 2>&1

@@ -13,10 +13,10 @@ jobs:
         run: |
           git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git fetch
-      - name: Merge repository
+      - name: Merge master branch into main branch
         run: |
           git checkout main
           git merge master --no-commit
-      - name: Push to repository
+      - name: Push update to main branch
         run: |
           git push main > /dev/null 2>&1

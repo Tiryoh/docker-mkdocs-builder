@@ -2,6 +2,25 @@
 ## [Unreleased]
 
 
+<a name="v0.7.0"></a>
+## [v0.7.0] - 2021-11-07
+### CI
+- Add an action to create release from issue ([#49](https://github.com/Tiryoh/docker-mkdocs-builder/issues/49))
+- Add Mergify configuration ([#47](https://github.com/Tiryoh/docker-mkdocs-builder/issues/47))
+- Fix git merge error
+- Update CI trigger condition ([#46](https://github.com/Tiryoh/docker-mkdocs-builder/issues/46))
+- Add mkdocs build test ([#45](https://github.com/Tiryoh/docker-mkdocs-builder/issues/45))
+
+### Chore
+- **deps:** Bump mkdocs-material from 7.3.2 to 7.3.6 ([#48](https://github.com/Tiryoh/docker-mkdocs-builder/issues/48))
+- **deps:** Bump mkdocs-minify-plugin from 0.4.1 to 0.5.0 ([#43](https://github.com/Tiryoh/docker-mkdocs-builder/issues/43))
+- **deps:** Bump mkdocs from 1.2.2 to 1.2.3 ([#42](https://github.com/Tiryoh/docker-mkdocs-builder/issues/42))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.7.0...HEAD
+[v0.7.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.1...v0.7.0
+
+
 <a name="v0.6.1"></a>
 ## [v0.6.1] - 2021-10-16
 ### Bug Fixes
@@ -71,7 +90,6 @@
 ### Feature
 - Add Dockerfiles
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.1...HEAD
 [v0.6.1]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.0...v0.6.1
 [v0.6.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.4.0...v0.5.0

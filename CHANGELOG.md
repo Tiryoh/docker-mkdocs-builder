@@ -2,6 +2,16 @@
 ## [Unreleased]
 
 
+<a name="v0.8.1"></a>
+## [v0.8.1] - 2021-12-14
+### CI
+- Update CHANGELOG generation flow ([#61](https://github.com/Tiryoh/docker-mkdocs-builder/issues/61))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.8.1...HEAD
+[v0.8.1]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.8.0...v0.8.1
+
+
 <a name="v0.8.0"></a>
 ## [v0.8.0] - 2021-12-14
 ### Chore
@@ -12,7 +22,6 @@
 - **deps:** Bump mkdocs-git-revision-date-localized-plugin ([#52](https://github.com/Tiryoh/docker-mkdocs-builder/issues/52))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.8.0...HEAD
 [v0.8.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.7.0...v0.8.0
 
 

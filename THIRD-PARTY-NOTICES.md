@@ -1,4 +1,5 @@
 The following projects are referenced to create the Dockerfiles.
+
 ## [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
 ```
@@ -24,6 +25,7 @@ IN THE SOFTWARE.
 ```
 
 ## [wemake-services/wemake-django-template](https://github.com/wemake-services/wemake-django-template)
+
 ```
 MIT License
 
@@ -35,3 +37,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+diff --git a/THIRD-PARTY-LICENSE.md b/THIRD-PARTY-LICENSE.md

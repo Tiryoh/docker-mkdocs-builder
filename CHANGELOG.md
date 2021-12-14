@@ -2,6 +2,20 @@
 ## [Unreleased]
 
 
+<a name="v0.8.0"></a>
+## [v0.8.0] - 2021-12-14
+### Chore
+- **deps:** Bump mkdocs-material from 7.3.6 to 8.1.0 ([#58](https://github.com/Tiryoh/docker-mkdocs-builder/issues/58))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin ([#57](https://github.com/Tiryoh/docker-mkdocs-builder/issues/57))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin ([#54](https://github.com/Tiryoh/docker-mkdocs-builder/issues/54))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin ([#53](https://github.com/Tiryoh/docker-mkdocs-builder/issues/53))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin ([#52](https://github.com/Tiryoh/docker-mkdocs-builder/issues/52))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.8.0...HEAD
+[v0.8.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.7.0...v0.8.0
+
+
 <a name="v0.7.0"></a>
 ## [v0.7.0] - 2021-11-07
 ### CI
@@ -17,7 +31,6 @@
 - **deps:** Bump mkdocs from 1.2.2 to 1.2.3 ([#42](https://github.com/Tiryoh/docker-mkdocs-builder/issues/42))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.7.0...HEAD
 [v0.7.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.6.1...v0.7.0
 
 

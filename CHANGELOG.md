@@ -3,7 +3,7 @@
 
 
 <a name="v0.9.0"></a>
-## [v0.9.0] - 2022-01-03
+## [v0.9.0] - 2022-01-09
 ### Chore
 - **deps:** Bump mkdocs-material from 8.1.3 to 8.1.4 ([#68](https://github.com/Tiryoh/docker-mkdocs-builder/issues/68))
 - **deps:** Bump mkdocs-htmlproofer-plugin from 0.7.0 to 0.8.0 ([#67](https://github.com/Tiryoh/docker-mkdocs-builder/issues/67))

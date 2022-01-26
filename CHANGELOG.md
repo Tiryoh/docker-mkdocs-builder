@@ -2,6 +2,18 @@
 ## [Unreleased]
 
 
+<a name="v0.10.0"></a>
+## [v0.10.0] - 2022-01-24
+### Chore
+- **deps:** Bump mkdocs-material from 8.1.7 to 8.1.8 ([#73](https://github.com/Tiryoh/docker-mkdocs-builder/issues/73))
+- **deps:** Bump mkdocs-material from 8.1.5 to 8.1.7 ([#72](https://github.com/Tiryoh/docker-mkdocs-builder/issues/72))
+- **deps:** Bump mkdocs-material from 8.1.4 to 8.1.5 ([#71](https://github.com/Tiryoh/docker-mkdocs-builder/issues/71))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.10.0...HEAD
+[v0.10.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.9.0...v0.10.0
+
+
 <a name="v0.9.0"></a>
 ## [v0.9.0] - 2022-01-09
 ### Chore
@@ -11,7 +23,6 @@
 - **deps:** Bump mkdocs-material from 8.1.0 to 8.1.3 ([#65](https://github.com/Tiryoh/docker-mkdocs-builder/issues/65))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.9.0...HEAD
 [v0.9.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.8.1...v0.9.0
 
 

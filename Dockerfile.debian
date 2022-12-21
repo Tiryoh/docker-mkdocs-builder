@@ -22,7 +22,7 @@ ENV MKDOCS_ENV=${MKDOCS_ENV} \
 # Install system deps
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-        bash curl git && \
+        bash curl git libcairo2 && \
     # Installing `poetry` package manager:
     # https://github.com/python-poetry/poetry
     curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 - && \

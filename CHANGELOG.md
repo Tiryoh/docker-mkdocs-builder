@@ -2,6 +2,21 @@
 ## [Unreleased]
 
 
+<a name="v0.17.0"></a>
+## [v0.17.0] - 2022-12-25
+### Chore
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.10.1 to 0.10.2 ([#114](https://github.com/Tiryoh/docker-mkdocs-builder/issues/114))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.9.0 to 0.10.1 ([#113](https://github.com/Tiryoh/docker-mkdocs-builder/issues/113))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.8.0 to 0.9.0 ([#111](https://github.com/Tiryoh/docker-mkdocs-builder/issues/111))
+
+### Features
+- Added libcairo for social extension in material ([#115](https://github.com/Tiryoh/docker-mkdocs-builder/issues/115))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.17.0...HEAD
+[v0.17.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.16.0...v0.17.0
+
+
 <a name="v0.16.0"></a>
 ## [v0.16.0] - 2022-09-19
 ### Chore
@@ -11,7 +26,6 @@
 - **deps:** Bump mkdocs-redirects from 1.0.4 to 1.0.5 ([#105](https://github.com/Tiryoh/docker-mkdocs-builder/issues/105))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.16.0...HEAD
 [v0.16.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.15.0...v0.16.0
 
 

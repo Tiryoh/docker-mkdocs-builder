@@ -7,7 +7,7 @@ on:
     branches:
       - master
     paths:
-      - "Dockerfile.**"
+      - "**/Dockerfile"
       - "poetry.lock"
       - "pyproject.toml"
       - ".github/workflows/test.yaml"

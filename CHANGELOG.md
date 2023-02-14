@@ -2,13 +2,29 @@
 ## [Unreleased]
 
 
+<a name="v0.19.0"></a>
+## [v0.19.0] - 2023-02-14
+### Chore
+- **deps:** Bump certifi from 2020.12.5 to 2022.12.7 ([#119](https://github.com/Tiryoh/docker-mkdocs-builder/issues/119))
+- **deps:** Bump python from 3.9.16-slim-buster to 3.11.2-slim-buster in /debian ([#129](https://github.com/Tiryoh/docker-mkdocs-builder/issues/129))
+- **deps:** Bump python from 3.9.16-alpine3.17 to 3.11.2-alpine3.17 in /alpine ([#128](https://github.com/Tiryoh/docker-mkdocs-builder/issues/128))
+- **deps:** Bump pyyaml from 5.3.1 to 5.4 ([#122](https://github.com/Tiryoh/docker-mkdocs-builder/issues/122))
+- **deps:** Bump babel from 2.9.0 to 2.9.1 ([#121](https://github.com/Tiryoh/docker-mkdocs-builder/issues/121))
+- **deps:** Bump urllib3 from 1.26.2 to 1.26.5 ([#118](https://github.com/Tiryoh/docker-mkdocs-builder/issues/118))
+- **deps:** Bump actions/checkout from 2 to 3 ([#126](https://github.com/Tiryoh/docker-mkdocs-builder/issues/126))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.19.0...HEAD
+[v0.19.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.1...v0.19.0
+
+
 <a name="v0.18.1"></a>
 ## [v0.18.1] - 2023-02-14
 ### Chore
 - Fix test workflow ([#134](https://github.com/Tiryoh/docker-mkdocs-builder/issues/134))
+- **deps:** Bump gitpython from 3.1.11 to 3.1.30 ([#133](https://github.com/Tiryoh/docker-mkdocs-builder/issues/133))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.1...HEAD
 [v0.18.1]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.0...v0.18.1
 
 

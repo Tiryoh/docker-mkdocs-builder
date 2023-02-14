@@ -22,6 +22,7 @@
 ## [v0.18.1] - 2023-02-14
 ### Chore
 - Fix test workflow ([#134](https://github.com/Tiryoh/docker-mkdocs-builder/issues/134))
+- **deps:** Bump gitpython from 3.1.11 to 3.1.30 ([#133](https://github.com/Tiryoh/docker-mkdocs-builder/issues/133))
 
 
 [v0.18.1]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.0...v0.18.1

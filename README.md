@@ -12,11 +12,22 @@ docker run --rm -p 8000:8000 -v $PWD:/docs tiryoh/mkdocs-builder:alpine
 2. Access http://127.0.0.1:8000 to access the content
 
 
-## Related projects
+## Related Projects
 
 * [Tiryoh/actions-mkdocs](https://github.com/Tiryoh/actions-mkdocs)
     * GitHub Actions for MkDocs
 
+## (Advanced) Build Docker Image
+
+To build the docker image localy, run the following command.
+
+```sh
+# Debian
+docker build -t tiryoh/mkdocs-builder:debian -f debian/Dockerfile .
+
+# Alpine
+docker build -t tiryoh/mkdocs-builder:alpine -f alpine/Dockerfile .
+```
 
 ## License
 

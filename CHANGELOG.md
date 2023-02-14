@@ -2,6 +2,20 @@
 ## [Unreleased]
 
 
+<a name="v0.18.0"></a>
+## [v0.18.0] - 2023-02-14
+### Chore
+- Update dependabot config ([#123](https://github.com/Tiryoh/docker-mkdocs-builder/issues/123))
+
+### Features
+- Update pyproject.toml to support mkdocs-material > 8.2.12 ([#130](https://github.com/Tiryoh/docker-mkdocs-builder/issues/130))
+- Update Dockerfile to install the latest poetry ([#127](https://github.com/Tiryoh/docker-mkdocs-builder/issues/127))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.0...HEAD
+[v0.18.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.17.0...v0.18.0
+
+
 <a name="v0.17.0"></a>
 ## [v0.17.0] - 2022-12-25
 ### Chore
@@ -13,7 +27,6 @@
 - Added libcairo for social extension in material ([#115](https://github.com/Tiryoh/docker-mkdocs-builder/issues/115))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.17.0...HEAD
 [v0.17.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.16.0...v0.17.0
 
 

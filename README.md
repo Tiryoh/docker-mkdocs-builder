@@ -19,7 +19,7 @@ docker run --rm -p 8000:8000 -v $PWD:/docs tiryoh/mkdocs-builder:alpine
 
 ## (Advanced) Build Docker Image
 
-To build the docker image localy, run the following command.
+To build the docker image locally, run the following command.
 
 ```sh
 # Debian

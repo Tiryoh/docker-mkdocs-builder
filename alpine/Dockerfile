@@ -1,4 +1,4 @@
-FROM python:3.9.5-slim-buster
+FROM python:3.9.16-alpine3.17
 
 ARG MKDOCS_ENV=production
 
@@ -13,24 +13,21 @@ ENV MKDOCS_ENV=${MKDOCS_ENV} \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
     # poetry:
-    POETRY_VERSION=1.1.4 \
+    POETRY_VERSION=1.3.2 \
     POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_CREATE=false \
     POETRY_CACHE_DIR='/var/cache/pypoetry' \
-    PATH="$PATH:/root/.poetry/bin"
+    PATH="$PATH:/root/.local/bin"
 
 # Install system deps
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y \
-        bash curl git libcairo2 && \
+RUN apk add --no-cache \
+    bash git gcc musl-dev libxml2-dev libxslt-dev libffi-dev && \
+    apk add --no-cache --virtual .build curl && \
     # Installing `poetry` package manager:
     # https://github.com/python-poetry/poetry
-    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 - && \
+    curl -sSL https://install.python-poetry.org | python - || { cat /poetry*.log; exit 1; } && \
     poetry --version && \
-    apt-get purge -y curl && \
-    apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false && \
-    apt-get clean -y && \
-    rm -rf rm -rf /var/lib/apt/lists/*
+    apk del .build
 
 # Copy only requirements to cache them in docker layer
 COPY poetry.lock pyproject.toml /docs/

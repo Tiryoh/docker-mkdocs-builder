@@ -1,7 +1,14 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/debian/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "Type: Dependencies"
+      - "Lang: Dockerfile"
+  - package-ecosystem: "docker"
+    directory: "/alpine/"
     schedule:
       interval: "weekly"
     labels:

@@ -28,7 +28,7 @@ jobs:
         env:
           DOCKER_LABEL: ${{ matrix.target }}
         run: |
-          docker build -t $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL -f Dockerfile.$DOCKER_LABEL .
+          docker build -t $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL -f $DOCKER_LABEL/Dockerfile .
       - name: Checkout mkdocs
         uses: actions/checkout@v2
         with:

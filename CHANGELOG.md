@@ -2,6 +2,16 @@
 ## [Unreleased]
 
 
+<a name="v0.18.1"></a>
+## [v0.18.1] - 2023-02-14
+### Chore
+- Fix test workflow ([#134](https://github.com/Tiryoh/docker-mkdocs-builder/issues/134))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.1...HEAD
+[v0.18.1]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.0...v0.18.1
+
+
 <a name="v0.18.0"></a>
 ## [v0.18.0] - 2023-02-14
 ### Chore
@@ -12,7 +22,6 @@
 - Update Dockerfile to install the latest poetry ([#127](https://github.com/Tiryoh/docker-mkdocs-builder/issues/127))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.0...HEAD
 [v0.18.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.17.0...v0.18.0
 
 

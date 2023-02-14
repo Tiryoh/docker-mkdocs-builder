@@ -31,7 +31,7 @@ docker build -t tiryoh/mkdocs-builder:alpine -f alpine/Dockerfile .
 
 ## License
 
-Copyright (c) 2020 Daisuke Sato
+Copyright (c) 2020-2023 Daisuke Sato
 
 This repository is licensed under the MIT License, see [LICENSE](./LICENSE).
 Unless attributed otherwise, everything in this repository is licensed under the MIT license.

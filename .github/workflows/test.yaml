@@ -43,7 +43,7 @@ jobs:
         run: |
           mkdir -p build_log
           docker image ls "$DOCKER_USERNAME/*" | tee ./build_log/docker_images.txt
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: build-log-${{ matrix.target }}
           path: build_log

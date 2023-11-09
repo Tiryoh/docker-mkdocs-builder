@@ -2,6 +2,44 @@
 ## [Unreleased]
 
 
+<a name="v0.20.0"></a>
+## [v0.20.0] - 2023-11-09
+### Bug Fixes
+- Fix docker build error ([#186](https://github.com/Tiryoh/docker-mkdocs-builder/issues/186))
+
+### Chore
+- **deps:** Bump mkdocs-material from 9.1.17 to 9.1.18 ([#168](https://github.com/Tiryoh/docker-mkdocs-builder/issues/168))
+- **deps:** Bump mkdocs-material from 9.1.16 to 9.1.17 ([#167](https://github.com/Tiryoh/docker-mkdocs-builder/issues/167))
+- **deps:** Bump mkdocs-material from 9.1.15 to 9.1.16 ([#166](https://github.com/Tiryoh/docker-mkdocs-builder/issues/166))
+- **deps:** Bump python from 3.11.3-alpine3.17 to 3.11.4-alpine3.17 in /alpine ([#165](https://github.com/Tiryoh/docker-mkdocs-builder/issues/165))
+- **deps:** Bump python from 3.11.3-slim-buster to 3.11.4-slim-buster in /debian ([#164](https://github.com/Tiryoh/docker-mkdocs-builder/issues/164))
+- **deps:** Bump mkdocs-material from 9.1.14 to 9.1.15 ([#163](https://github.com/Tiryoh/docker-mkdocs-builder/issues/163))
+- **deps:** Bump requests from 2.28.2 to 2.31.0 ([#162](https://github.com/Tiryoh/docker-mkdocs-builder/issues/162))
+- **deps:** Bump mkdocs-material from 9.1.12 to 9.1.14 ([#161](https://github.com/Tiryoh/docker-mkdocs-builder/issues/161))
+- **deps:** Bump mkdocs-material from 9.1.9 to 9.1.12 ([#159](https://github.com/Tiryoh/docker-mkdocs-builder/issues/159))
+- **deps:** Bump mkdocs-material from 9.1.7 to 9.1.9 ([#158](https://github.com/Tiryoh/docker-mkdocs-builder/issues/158))
+- **deps:** Bump mkdocs from 1.4.2 to 1.4.3 ([#157](https://github.com/Tiryoh/docker-mkdocs-builder/issues/157))
+- **deps:** Bump mkdocs-material from 9.1.6 to 9.1.7 ([#155](https://github.com/Tiryoh/docker-mkdocs-builder/issues/155))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.12.0 to 0.13.1 ([#154](https://github.com/Tiryoh/docker-mkdocs-builder/issues/154))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.11.0 to 0.12.0 ([#153](https://github.com/Tiryoh/docker-mkdocs-builder/issues/153))
+- **deps:** Bump python from 3.11.2-slim-buster to 3.11.3-slim-buster in /debian ([#152](https://github.com/Tiryoh/docker-mkdocs-builder/issues/152))
+- **deps:** Bump python from 3.11.2-alpine3.17 to 3.11.3-alpine3.17 in /alpine ([#151](https://github.com/Tiryoh/docker-mkdocs-builder/issues/151))
+- **deps:** Bump mkdocs-material from 9.1.5 to 9.1.6 ([#150](https://github.com/Tiryoh/docker-mkdocs-builder/issues/150))
+- **deps:** Bump mkdocs-material from 9.1.3 to 9.1.5 ([#149](https://github.com/Tiryoh/docker-mkdocs-builder/issues/149))
+- **deps:** Bump mkdocs-material from 8.5.10 to 9.1.3 ([#147](https://github.com/Tiryoh/docker-mkdocs-builder/issues/147))
+- **deps:** Bump actions/upload-artifact from 2 to 3 ([#124](https://github.com/Tiryoh/docker-mkdocs-builder/issues/124))
+- **deps:** Bump github/codeql-action from 1 to 2 ([#125](https://github.com/Tiryoh/docker-mkdocs-builder/issues/125))
+- **deps:** Bump mkdocs-minify-plugin from 0.6.2 to 0.6.4 ([#148](https://github.com/Tiryoh/docker-mkdocs-builder/issues/148))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.10.3 to 0.11.0 ([#146](https://github.com/Tiryoh/docker-mkdocs-builder/issues/146))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.1.0 to 1.2.0 ([#144](https://github.com/Tiryoh/docker-mkdocs-builder/issues/144))
+- **deps:** Bump mkdocs-htmlproofer-plugin from 0.10.2 to 0.10.3 ([#141](https://github.com/Tiryoh/docker-mkdocs-builder/issues/141))
+- **deps:** Bump mkdocs-minify-plugin from 0.5.0 to 0.6.2 ([#140](https://github.com/Tiryoh/docker-mkdocs-builder/issues/140))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.20.0...HEAD
+[v0.20.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.19.0...v0.20.0
+
+
 <a name="v0.19.0"></a>
 ## [v0.19.0] - 2023-02-14
 ### Chore
@@ -14,7 +52,6 @@
 - **deps:** Bump actions/checkout from 2 to 3 ([#126](https://github.com/Tiryoh/docker-mkdocs-builder/issues/126))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.19.0...HEAD
 [v0.19.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.18.1...v0.19.0
 
 

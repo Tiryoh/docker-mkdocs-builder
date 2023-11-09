@@ -23,14 +23,14 @@ jobs:
         target: [alpine, debian]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Build docker image
         env:
           DOCKER_LABEL: ${{ matrix.target }}
         run: |
           docker build -t $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL -f $DOCKER_LABEL/Dockerfile .
       - name: Checkout mkdocs
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: squidfunk/mkdocs-material
           path: mkdocs-material
@@ -55,7 +55,7 @@ jobs:
       #     sudo apt-get update
       #     sudo apt-get install trivy
       # - name: Install Trivy template
-      #   uses: actions/checkout@v3
+      #   uses: actions/checkout@v4
       #   with:
       #     repository: aquasecurity/trivy
       #     path: trivy

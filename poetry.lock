@@ -455,19 +455,19 @@ files = [
 
 [[package]]
 name = "mkdocs-htmlproofer-plugin"
-version = "0.13.1"
+version = "1.1.0"
 description = "A MkDocs plugin that validates URL in rendered HTML files"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.8"
 files = [
-    {file = "mkdocs-htmlproofer-plugin-0.13.1.tar.gz", hash = "sha256:6753af6af8ede4cea2cb31aff90db6ba7eb32749aaf7c4ab6c5b63f6c747ea2a"},
-    {file = "mkdocs_htmlproofer_plugin-0.13.1-py3-none-any.whl", hash = "sha256:8a9232a949c407f22c58a92786b049bea5e9fe87752df866bb43e775a649d56c"},
+    {file = "mkdocs-htmlproofer-plugin-1.1.0.tar.gz", hash = "sha256:4d33778ca70fdec4bb4c73ebc0dc871d054cde70d8835a8281fbdf9a3de8ad41"},
+    {file = "mkdocs_htmlproofer_plugin-1.1.0-py3-none-any.whl", hash = "sha256:64ee019ce316ea4df276387d58049d43c50aba1108c99d3dbe14c5458357a723"},
 ]
 
 [package.dependencies]
 beautifulsoup4 = "*"
 Markdown = "*"
-mkdocs = ">=0.17"
+mkdocs = ">=1.4.0"
 requests = "*"
 
 [[package]]
@@ -1021,4 +1021,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "08e0f4e5a847ccc400406a4f7f69366eab3df234ec26def05bd04543d7be43bf"
+content-hash = "2a862e1462b367f5a1019f96d5f9e615a52b75d0b51bfef551eda4c578ee0b60"

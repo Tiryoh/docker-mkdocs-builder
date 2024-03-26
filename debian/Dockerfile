@@ -41,7 +41,7 @@ WORKDIR /docs
 # Initialize project
 RUN echo "MKDOCS_ENV: "${MKDOCS_ENV} && \
     poetry install \
-    $(if [ "$MKDOCS_ENV" = 'production' ]; then echo '--no-dev'; fi) \
+    $(if [ "$MKDOCS_ENV" = 'production' ]; then echo '--only main'; fi) \
     --no-interaction --no-ansi && \
     if [ "$MKDOCS_ENV" = 'production' ]; then rm -rf "$POETRY_CACHE_DIR"; fi
 

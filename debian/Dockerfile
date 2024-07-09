@@ -1,4 +1,4 @@
-FROM python:3.11.4-slim-buster
+FROM python:3.12.0-slim-bookworm
 
 ARG MKDOCS_ENV=production
 
@@ -22,7 +22,7 @@ ENV MKDOCS_ENV=${MKDOCS_ENV} \
 # Install system deps
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-        bash curl git libcairo2 && \
+        bash curl git gcc libcairo2 libstdc++-11-dev && \
     # Installing `poetry` package manager:
     # https://github.com/python-poetry/poetry
     curl -sSL https://install.python-poetry.org | python3 - || { cat /poetry*.log; exit 1; } && \

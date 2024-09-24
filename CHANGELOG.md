@@ -2,6 +2,59 @@
 ## [Unreleased]
 
 
+<a name="v0.21.0"></a>
+## [v0.21.0] - 2024-09-24
+### Bug Fixes
+- poetry deprecation warning ([#217](https://github.com/Tiryoh/docker-mkdocs-builder/issues/217))
+
+### Chore
+- Update lockfile to update dependencies ([#237](https://github.com/Tiryoh/docker-mkdocs-builder/issues/237))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.4 to 1.2.5 ([#224](https://github.com/Tiryoh/docker-mkdocs-builder/issues/224))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.8 to 1.2.9 ([#235](https://github.com/Tiryoh/docker-mkdocs-builder/issues/235))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.7 to 1.2.8 ([#234](https://github.com/Tiryoh/docker-mkdocs-builder/issues/234))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.6 to 1.2.7 ([#233](https://github.com/Tiryoh/docker-mkdocs-builder/issues/233))
+- **deps:** Bump python from 3.11.4-slim-buster to 3.12.0-slim-bookworm ([#216](https://github.com/Tiryoh/docker-mkdocs-builder/issues/216))
+- **deps:** Bump urllib3 from 2.0.7 to 2.2.2 ([#229](https://github.com/Tiryoh/docker-mkdocs-builder/issues/229))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.5 to 1.2.6 ([#228](https://github.com/Tiryoh/docker-mkdocs-builder/issues/228))
+- **deps:** Bump requests from 2.31.0 to 2.32.0 ([#226](https://github.com/Tiryoh/docker-mkdocs-builder/issues/226))
+- **deps:** Bump jinja2 from 3.1.3 to 3.1.4 ([#225](https://github.com/Tiryoh/docker-mkdocs-builder/issues/225))
+- **deps:** Bump mkdocs-material from 9.4.0 to 9.4.8 ([#189](https://github.com/Tiryoh/docker-mkdocs-builder/issues/189))
+- **deps:** Bump mkdocs-material from 9.5.17 to 9.5.18 ([#222](https://github.com/Tiryoh/docker-mkdocs-builder/issues/222))
+- **deps:** Bump idna from 3.4 to 3.7 ([#221](https://github.com/Tiryoh/docker-mkdocs-builder/issues/221))
+- **deps:** Bump mkdocs-material from 9.5.16 to 9.5.17 ([#220](https://github.com/Tiryoh/docker-mkdocs-builder/issues/220))
+- **deps:** Bump mkdocs-material from 9.5.15 to 9.5.16 ([#219](https://github.com/Tiryoh/docker-mkdocs-builder/issues/219))
+- **deps:** Bump mkdocs-material from 9.5.14 to 9.5.15 ([#218](https://github.com/Tiryoh/docker-mkdocs-builder/issues/218))
+- **deps:** Bump mkdocs-material from 9.5.13 to 9.5.14 ([#215](https://github.com/Tiryoh/docker-mkdocs-builder/issues/215))
+- **deps:** Bump mkdocs-material from 9.5.12 to 9.5.13 ([#213](https://github.com/Tiryoh/docker-mkdocs-builder/issues/213))
+- **deps:** Bump mkdocs-material from 9.5.11 to 9.5.12 ([#212](https://github.com/Tiryoh/docker-mkdocs-builder/issues/212))
+- **deps:** Bump mkdocs-material from 9.5.10 to 9.5.11 ([#210](https://github.com/Tiryoh/docker-mkdocs-builder/issues/210))
+- **deps:** Bump mkdocs-material from 9.5.9 to 9.5.10 ([#209](https://github.com/Tiryoh/docker-mkdocs-builder/issues/209))
+- **deps:** Bump mkdocs-material from 9.5.7 to 9.5.9 ([#208](https://github.com/Tiryoh/docker-mkdocs-builder/issues/208))
+- **deps:** Bump mkdocs-minify-plugin from 0.7.2 to 0.8.0 ([#207](https://github.com/Tiryoh/docker-mkdocs-builder/issues/207))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.2 to 1.2.4 ([#206](https://github.com/Tiryoh/docker-mkdocs-builder/issues/206))
+- **deps:** Bump mkdocs-material from 9.5.6 to 9.5.7 ([#205](https://github.com/Tiryoh/docker-mkdocs-builder/issues/205))
+- **deps:** Bump mkdocs-material from 9.5.4 to 9.5.6 ([#204](https://github.com/Tiryoh/docker-mkdocs-builder/issues/204))
+- **deps:** Bump mkdocs-material from 9.5.3 to 9.5.4 ([#203](https://github.com/Tiryoh/docker-mkdocs-builder/issues/203))
+- **deps:** Bump jinja2 from 3.1.2 to 3.1.3 ([#202](https://github.com/Tiryoh/docker-mkdocs-builder/issues/202))
+- **deps:** Bump gitpython from 3.1.40 to 3.1.41 ([#201](https://github.com/Tiryoh/docker-mkdocs-builder/issues/201))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.1 to 1.2.2 ([#200](https://github.com/Tiryoh/docker-mkdocs-builder/issues/200))
+- **deps:** Bump mkdocs-material from 9.5.2 to 9.5.3 ([#199](https://github.com/Tiryoh/docker-mkdocs-builder/issues/199))
+- **deps:** Bump mkdocs-material from 9.5.1 to 9.5.2 ([#196](https://github.com/Tiryoh/docker-mkdocs-builder/issues/196))
+- **deps:** Bump mkdocs-minify-plugin from 0.7.1 to 0.7.2 ([#195](https://github.com/Tiryoh/docker-mkdocs-builder/issues/195))
+- **deps:** Bump mkdocs-material from 9.4.14 to 9.5.1 ([#194](https://github.com/Tiryoh/docker-mkdocs-builder/issues/194))
+- **deps:** Bump mkdocs-material-extensions from 1.3 to 1.3.1 ([#193](https://github.com/Tiryoh/docker-mkdocs-builder/issues/193))
+- **deps:** Bump mkdocs-material from 9.4.10 to 9.4.14 ([#192](https://github.com/Tiryoh/docker-mkdocs-builder/issues/192))
+- **deps:** Bump mkdocs-material from 9.4.8 to 9.4.10 ([#191](https://github.com/Tiryoh/docker-mkdocs-builder/issues/191))
+- **deps:** Bump mkdocs-minify-plugin from 0.6.4 to 0.7.1 ([#175](https://github.com/Tiryoh/docker-mkdocs-builder/issues/175))
+- **deps:** Bump python from 3.11.4-alpine3.17 to 3.12.0-alpine3.17 in /alpine ([#182](https://github.com/Tiryoh/docker-mkdocs-builder/issues/182))
+- **deps:** Bump actions/checkout from 3 to 4 ([#178](https://github.com/Tiryoh/docker-mkdocs-builder/issues/178))
+- **deps-dev:** Bump zipp from 3.17.0 to 3.19.1 ([#231](https://github.com/Tiryoh/docker-mkdocs-builder/issues/231))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.21.0...HEAD
+[v0.21.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.20.0...v0.21.0
+
+
 <a name="v0.20.0"></a>
 ## [v0.20.0] - 2023-11-09
 ### Bug Fixes
@@ -36,7 +89,6 @@
 - **deps:** Bump mkdocs-minify-plugin from 0.5.0 to 0.6.2 ([#140](https://github.com/Tiryoh/docker-mkdocs-builder/issues/140))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.20.0...HEAD
 [v0.20.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.19.0...v0.20.0
 
 

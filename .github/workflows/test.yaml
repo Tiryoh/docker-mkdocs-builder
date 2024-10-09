@@ -48,17 +48,6 @@ jobs:
         with:
           name: build-log-${{ matrix.target }}
           path: build_log
-      ## To avoid the trivy-db becoming outdated, save the cache only for one day
-      - name: Get date
-        id: date
-        run: echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
-      - name: Restore trivy cache
-        uses: actions/cache@v4
-        with:
-          path: cache/db
-          key: trivy-cache-${{ steps.date.outputs.date }}
-          restore-keys:
-            trivy-cache-
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
@@ -69,12 +58,9 @@ jobs:
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
-          cache-dir: "./cache"
-      ## Trivy-db uses `0600` permissions.
-      ## But `action/cache` use `runner` user by default
-      ## So we need to change the permissions before caching the database.
-      - name: Change permissions for trivy.db
-        run: sudo chmod 0644 ./cache/db/trivy.db
+        env:
+          TRIVY_SKIP_DB_UPDATE: true
+          TRIVY_SKIP_JAVA_DB_UPDATE: true
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v3
         with:

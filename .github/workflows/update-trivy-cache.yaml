@@ -18,14 +18,16 @@ jobs:
       - name: Download and extract the vulnerability DB
         run: |
           mkdir -p $GITHUB_WORKSPACE/.cache/trivy/db
-          oras pull ghcr.io/aquasecurity/trivy-db:2
+          oras copy ghcr.io/aquasecurity/trivy-db:2 ghcr.io/tiryoh/aquasecurity/trivy-db:2 || echo "err"
+          oras pull ghcr.io/aquasecurity/trivy-db:2 || oras pull ghcr.io/tiryoh/aquasecurity/trivy-db:2
           tar -xzf db.tar.gz -C $GITHUB_WORKSPACE/.cache/trivy/db
           rm db.tar.gz
 
       - name: Download and extract the Java DB
         run: |
           mkdir -p $GITHUB_WORKSPACE/.cache/trivy/java-db
-          oras pull ghcr.io/aquasecurity/trivy-java-db:1
+          oras copy ghcr.io/aquasecurity/trivy-java-db:1 ghcr.io/tiryoh/aquasecurity/trivy-java-db:1 || echo "err"
+          oras pull ghcr.io/aquasecurity/trivy-java-db:1 || oras pull ghcr.io/tiryoh/aquasecurity/trivy-java-db:1
           tar -xzf javadb.tar.gz -C $GITHUB_WORKSPACE/.cache/trivy/java-db
           rm javadb.tar.gz
 

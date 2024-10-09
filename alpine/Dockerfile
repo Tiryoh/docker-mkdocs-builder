@@ -31,12 +31,14 @@ RUN apk add --no-cache \
 
 # Copy only requirements to cache them in docker layer
 COPY poetry.lock pyproject.toml /docs/
+COPY requirements.txt /
 
 # Set working directory
 WORKDIR /docs
 
 # Initialize project
 RUN echo "MKDOCS_ENV: "${MKDOCS_ENV} && \
+    pip3 install --requirement /requirements.txt --no-cache-dir --root-user-action ignore && \
     poetry install \
     $(if [ "$MKDOCS_ENV" = 'production' ]; then echo '--only main'; fi) \
     --no-interaction --no-ansi && \

@@ -440,19 +440,19 @@ files = [
 
 [[package]]
 name = "mkdocs-htmlproofer-plugin"
-version = "0.13.1"
+version = "1.3.0"
 description = "A MkDocs plugin that validates URL in rendered HTML files"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.8"
 files = [
-    {file = "mkdocs-htmlproofer-plugin-0.13.1.tar.gz", hash = "sha256:6753af6af8ede4cea2cb31aff90db6ba7eb32749aaf7c4ab6c5b63f6c747ea2a"},
-    {file = "mkdocs_htmlproofer_plugin-0.13.1-py3-none-any.whl", hash = "sha256:8a9232a949c407f22c58a92786b049bea5e9fe87752df866bb43e775a649d56c"},
+    {file = "mkdocs-htmlproofer-plugin-1.3.0.tar.gz", hash = "sha256:9d9c0830305593d5f3993f0355956bee557a7c0924d63c3caacf7924ed4f444f"},
+    {file = "mkdocs_htmlproofer_plugin-1.3.0-py3-none-any.whl", hash = "sha256:715e0648b60a92d2c838ca42deacc67c9c2a855486122cc328f573d27ceebc7c"},
 ]
 
 [package.dependencies]
 beautifulsoup4 = "*"
 Markdown = "*"
-mkdocs = ">=0.17"
+mkdocs = ">=1.4.0"
 requests = "*"
 
 [[package]]
@@ -998,4 +998,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "1ecafe8f2a55c471722c24f065b66e2923d0a1d74ea23ad386101e622309a0b2"
+content-hash = "5e58d472d687c556ea77e66871f2a2f2ff20ec869688bc118eff761985d47aeb"

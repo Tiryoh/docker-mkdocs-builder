@@ -1,1 +1,1 @@
-setuptools==75.8.0
+setuptools==77.0.3

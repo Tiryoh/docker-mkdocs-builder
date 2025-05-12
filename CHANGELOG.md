@@ -2,6 +2,35 @@
 ## [Unreleased]
 
 
+<a name="v0.22.0"></a>
+## [v0.22.0] - 2025-05-12
+### Bug Fixes
+- Install python package setuptools ([#241](https://github.com/Tiryoh/docker-mkdocs-builder/issues/241))
+- **ci:** Add missing oras command ([#254](https://github.com/Tiryoh/docker-mkdocs-builder/issues/254))
+- **ci:** Fix Trivy TOOMANYREQUESTS errors ([#244](https://github.com/Tiryoh/docker-mkdocs-builder/issues/244))
+
+### Chore
+- **ci:** Remove db backup ([#246](https://github.com/Tiryoh/docker-mkdocs-builder/issues/246))
+- **deps:** Upgrade Poetry version ([#270](https://github.com/Tiryoh/docker-mkdocs-builder/issues/270))
+- **deps:** Bump setuptools from 75.7.0 to 75.8.0 ([#257](https://github.com/Tiryoh/docker-mkdocs-builder/issues/257))
+- **deps:** Bump jinja2 from 3.1.4 to 3.1.5 ([#256](https://github.com/Tiryoh/docker-mkdocs-builder/issues/256))
+- **deps:** Bump setuptools from 75.6.0 to 75.7.0 ([#255](https://github.com/Tiryoh/docker-mkdocs-builder/issues/255))
+- **deps:** Bump python from 3.13.0-slim-bookworm to 3.13.1-slim-bookworm in /debian ([#253](https://github.com/Tiryoh/docker-mkdocs-builder/issues/253))
+- **deps:** Bump setuptools from 75.5.0 to 75.6.0 ([#252](https://github.com/Tiryoh/docker-mkdocs-builder/issues/252))
+- **deps:** Bump setuptools from 75.3.0 to 75.5.0 ([#251](https://github.com/Tiryoh/docker-mkdocs-builder/issues/251))
+- **deps:** Bump mkdocs-redirects from 1.2.1 to 1.2.2 ([#250](https://github.com/Tiryoh/docker-mkdocs-builder/issues/250))
+- **deps:** Bump setuptools from 75.2.0 to 75.3.0 ([#249](https://github.com/Tiryoh/docker-mkdocs-builder/issues/249))
+- **deps:** Bump mkdocs-git-revision-date-localized-plugin from 1.2.9 to 1.3.0 ([#248](https://github.com/Tiryoh/docker-mkdocs-builder/issues/248))
+- **deps:** Bump setuptools from 75.1.0 to 75.2.0 ([#247](https://github.com/Tiryoh/docker-mkdocs-builder/issues/247))
+- **deps:** Bump actions/upload-artifact from 3 to 4 ([#197](https://github.com/Tiryoh/docker-mkdocs-builder/issues/197))
+- **deps:** Bump python from 3.12.0-slim-bookworm to 3.13.0-slim-bookworm in /debian ([#245](https://github.com/Tiryoh/docker-mkdocs-builder/issues/245))
+- **deps:** Update the minimum Python version to 3.12 ([#242](https://github.com/Tiryoh/docker-mkdocs-builder/issues/242))
+
+
+[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.22.0...HEAD
+[v0.22.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.21.0...v0.22.0
+
+
 <a name="v0.21.0"></a>
 ## [v0.21.0] - 2024-09-24
 ### Bug Fixes
@@ -51,7 +80,6 @@
 - **deps-dev:** Bump zipp from 3.17.0 to 3.19.1 ([#231](https://github.com/Tiryoh/docker-mkdocs-builder/issues/231))
 
 
-[Unreleased]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.21.0...HEAD
 [v0.21.0]: https://github.com/Tiryoh/docker-mkdocs-builder/compare/v0.20.0...v0.21.0
 
 

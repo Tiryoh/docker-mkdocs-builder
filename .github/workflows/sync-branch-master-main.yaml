@@ -1,8 +1,8 @@
-name: Sync master branch and main branch
+name: Sync main branch and master branch
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   release-candidate:
     runs-on: ubuntu-latest
@@ -15,10 +15,10 @@ jobs:
         run: |
           git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git pull
-      - name: Merge master branch into main branch
+      - name: Merge main branch into master branch
         run: |
-          git checkout -b main origin/main
-          git merge master --no-commit
-      - name: Push update to main branch
+          git checkout -b master origin/master
+          git merge main --no-commit
+      - name: Push update to master branch
         run: |
-          git push origin main > /dev/null 2>&1
+          git push origin master > /dev/null 2>&1

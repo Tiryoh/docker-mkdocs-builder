@@ -13,7 +13,7 @@ ENV MKDOCS_ENV=${MKDOCS_ENV} \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
     # poetry:
-    POETRY_VERSION=1.3.2 \
+    POETRY_VERSION=2.1.3 \
     POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_CREATE=false \
     POETRY_CACHE_DIR='/var/cache/pypoetry' \
@@ -34,17 +34,15 @@ RUN apt-get update && \
 
 # Copy only requirements to cache them in docker layer
 COPY poetry.lock pyproject.toml /docs/
-COPY requirements.txt /
 
 # Set working directory
 WORKDIR /docs
 
 # Initialize project
 RUN echo "MKDOCS_ENV: "${MKDOCS_ENV} && \
-    pip3 install --requirement /requirements.txt --no-cache-dir --root-user-action ignore && \
     poetry install \
     $(if [ "$MKDOCS_ENV" = 'production' ]; then echo '--only main'; fi) \
-    --no-interaction --no-ansi && \
+    --no-interaction --no-ansi --no-root && \
     if [ "$MKDOCS_ENV" = 'production' ]; then rm -rf "$POETRY_CACHE_DIR"; fi
 
 # Expose MkDocs development server port

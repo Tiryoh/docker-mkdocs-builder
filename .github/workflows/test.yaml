@@ -24,14 +24,14 @@ jobs:
         target: [alpine, debian]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Build docker image
         env:
           DOCKER_LABEL: ${{ matrix.target }}
         run: |
           docker build -t $DOCKER_USERNAME/$DOCKER_IMAGENAME:$DOCKER_LABEL -f $DOCKER_LABEL/Dockerfile .
       - name: Checkout mkdocs
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: squidfunk/mkdocs-material
           path: mkdocs-material
